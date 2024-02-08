@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bc1072c9-9c47-4a89-9d03-219ffd5c628d" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GRzjODete0PNf3OhOfGLb7a8B6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/work_dir/projects/testbed/software/robots/software_cm4/cm4_core/cm4_core/utils&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work_dir\projects\testbed\software\robots\software_cm4\cm4_core\cm4_core\utils" />
+      <recent name="D:\work_dir\projects\testbed\software\robots\software_cm4\cm4_core\robot\TWIPR\experiments\ref1" />
+      <recent name="D:\work_dir\projects\testbed\software\robots\software_cm4\cm4_core\robot\TWIPR\experiments\estimation" />
+      <recent name="D:\work_dir\projects\testbed\software\robots\board_cm4_software\cm4_core\cm4_core\communication\serial" />
+      <recent name="D:\work_dir\projects\testbed\software\robots\board_cm4_software\cm4_core\cm4_core\communication\serial\protocols" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work_dir\projects\testbed\software\robots\software_cm4\cm4_core\robot\TWIPR\experiments" />
+      <recent name="C:\work_dir\projects\testbed\software\robots\software_cm4\cm4_core\cm4_core\utils\joystick" />
+      <recent name="C:\work_dir\projects\testbed\software\robots\software_cm4\cm4_core\cm4_core\utils\joystick\archive" />
+      <recent name="D:\work_dir\projects\testbed\software\robots\software_cm4\cm4_core\cm4_core\utils\stm32" />
+      <recent name="C:\work_dir\projects\testbed\software\robots\software_cm4\cm4_core\robot\TWIPR\communication" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.test_experiment">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="cm4_core" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="example_joystick" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cm4_core" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cm4_core/utils/joystick/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cm4_core/utils/joystick/examples/example_joystick.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cm4_core" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/robot/TWIPR/experiments" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/robot/TWIPR/experiments/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cm4_core" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\work_dir\projects\testbed\software\robots\software_cm4\cm4_core\robot\TWIPR\experiments\main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_experiment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cm4_core" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/robot/TWIPR/experiments" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/robot/TWIPR/experiments/test_experiment.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_rpi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cm4_core" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cm4_core/utils/joystick" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cm4_core/utils/joystick/test_rpi.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.test_rpi" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.example_joystick" />
+      <item itemvalue="Python.test_experiment" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test_experiment" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.test_rpi" />
+        <item itemvalue="Python.example_joystick" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc1072c9-9c47-4a89-9d03-219ffd5c628d" name="Changes" comment="" />
+      <created>1666366320998</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666366320998</updated>
+      <workItem from="1666366322452" duration="11702000" />
+      <workItem from="1666436914715" duration="13927000" />
+      <workItem from="1668782724645" duration="958000" />
+      <workItem from="1668940832197" duration="3795000" />
+      <workItem from="1668959010959" duration="7933000" />
+      <workItem from="1668976522838" duration="2909000" />
+      <workItem from="1669021512554" duration="16559000" />
+      <workItem from="1669049763382" duration="2336000" />
+      <workItem from="1669056307385" duration="2166000" />
+      <workItem from="1669111284453" duration="1166000" />
+      <workItem from="1669115686849" duration="1468000" />
+      <workItem from="1669123813404" duration="663000" />
+      <workItem from="1669124626097" duration="6073000" />
+      <workItem from="1669143395041" duration="7344000" />
+      <workItem from="1669633968216" duration="5078000" />
+      <workItem from="1669641603439" duration="4681000" />
+      <workItem from="1669647164978" duration="2408000" />
+      <workItem from="1669713731316" duration="1380000" />
+      <workItem from="1669716776546" duration="371000" />
+      <workItem from="1669726498765" duration="4000" />
+      <workItem from="1671568986176" duration="7000" />
+      <workItem from="1673258158159" duration="11161000" />
+      <workItem from="1673341003356" duration="12854000" />
+      <workItem from="1673361861911" duration="14322000" />
+      <workItem from="1673384792339" duration="165000" />
+      <workItem from="1673426444903" duration="4499000" />
+      <workItem from="1673433738830" duration="2574000" />
+      <workItem from="1674120677799" duration="351000" />
+      <workItem from="1676293226826" duration="747000" />
+      <workItem from="1677495527562" duration="5758000" />
+      <workItem from="1677518094620" duration="1694000" />
+      <workItem from="1677520734809" duration="111000" />
+      <workItem from="1677523654343" duration="253000" />
+      <workItem from="1677583714551" duration="3074000" />
+      <workItem from="1677665774860" duration="17115000" />
+      <workItem from="1677687499116" duration="727000" />
+      <workItem from="1677747505839" duration="14895000" />
+      <workItem from="1678461316231" duration="1175000" />
+      <workItem from="1678648349131" duration="3617000" />
+      <workItem from="1678653029234" duration="559000" />
+      <workItem from="1678790937745" duration="4046000" />
+      <workItem from="1678803380754" duration="3487000" />
+      <workItem from="1678808410000" duration="246000" />
+      <workItem from="1678824315211" duration="1424000" />
+      <workItem from="1678825844470" duration="908000" />
+      <workItem from="1678970291477" duration="6737000" />
+      <workItem from="1678991997764" duration="74000" />
+      <workItem from="1679167383471" duration="3873000" />
+      <workItem from="1679174936813" duration="1490000" />
+      <workItem from="1679389645703" duration="60000" />
+      <workItem from="1679583854662" duration="7466000" />
+      <workItem from="1679649436073" duration="11106000" />
+      <workItem from="1679674996793" duration="1932000" />
+      <workItem from="1679744078497" duration="8443000" />
+      <workItem from="1679762853352" duration="100000" />
+      <workItem from="1679762967895" duration="6961000" />
+      <workItem from="1679788344130" duration="253000" />
+      <workItem from="1679860372410" duration="856000" />
+      <workItem from="1679909319740" duration="3117000" />
+      <workItem from="1679922841597" duration="2060000" />
+      <workItem from="1679987363727" duration="28000" />
+      <workItem from="1679987441552" duration="788000" />
+      <workItem from="1679988304425" duration="240000" />
+      <workItem from="1680005891168" duration="5911000" />
+      <workItem from="1680105623962" duration="1234000" />
+      <workItem from="1680112045766" duration="10223000" />
+      <workItem from="1680127556035" duration="108000" />
+      <workItem from="1680174249586" duration="2742000" />
+      <workItem from="1680187225039" duration="51000" />
+      <workItem from="1680187320212" duration="1874000" />
+      <workItem from="1680202154321" duration="653000" />
+      <workItem from="1680247227206" duration="1238000" />
+      <workItem from="1680256425865" duration="3351000" />
+      <workItem from="1680272055218" duration="254000" />
+      <workItem from="1680275005903" duration="997000" />
+      <workItem from="1680297814464" duration="170000" />
+      <workItem from="1680510163116" duration="446000" />
+      <workItem from="1680621909011" duration="468000" />
+      <workItem from="1680773684343" duration="117000" />
+      <workItem from="1680773810514" duration="1700000" />
+      <workItem from="1681288206317" duration="19000" />
+      <workItem from="1681288234950" duration="74000" />
+      <workItem from="1682411694463" duration="3231000" />
+      <workItem from="1682417527007" duration="494000" />
+      <workItem from="1682498420387" duration="8000" />
+      <workItem from="1682584235492" duration="1108000" />
+      <workItem from="1682681106322" duration="1245000" />
+      <workItem from="1682778560726" duration="110000" />
+      <workItem from="1682778679718" duration="16000" />
+      <workItem from="1682778730342" duration="5000" />
+      <workItem from="1682778768769" duration="694000" />
+      <workItem from="1682782127897" duration="761000" />
+      <workItem from="1682851127474" duration="382000" />
+      <workItem from="1682969876928" duration="106000" />
+      <workItem from="1682972354238" duration="165000" />
+      <workItem from="1683019393853" duration="55000" />
+      <workItem from="1683019464111" duration="1861000" />
+      <workItem from="1683024850581" duration="1086000" />
+      <workItem from="1683103743305" duration="681000" />
+      <workItem from="1683552761486" duration="310000" />
+      <workItem from="1683888423718" duration="831000" />
+      <workItem from="1684492524421" duration="96000" />
+      <workItem from="1684492682907" duration="708000" />
+      <workItem from="1684499605439" duration="70000" />
+      <workItem from="1684502281504" duration="37000" />
+      <workItem from="1684502326051" duration="1216000" />
+      <workItem from="1684921238716" duration="9000" />
+      <workItem from="1685093391473" duration="3000" />
+      <workItem from="1685098854956" duration="16000" />
+      <workItem from="1685692857237" duration="621000" />
+      <workItem from="1687945579809" duration="909000" />
+      <workItem from="1688394826027" duration="625000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cm4_core$examples_serial.coverage" NAME="examples_serial Coverage Results" MODIFIED="1677665940116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/communication/serial/examples" />
+    <SUITE FILE_PATH="coverage/cm4_core$example_board.coverage" NAME="example_board Coverage Results" MODIFIED="1673430876010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/examples" />
+    <SUITE FILE_PATH="coverage/cm4_core$example_parameters.coverage" NAME="example_parameters Coverage Results" MODIFIED="1669150447033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/device/examples" />
+    <SUITE FILE_PATH="coverage/cm4_core$examples_udp.coverage" NAME="examples_udp Coverage Results" MODIFIED="1666438728760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/communication/wifi/examples" />
+    <SUITE FILE_PATH="coverage/cm4_core$example_sx1508_led_toggle.coverage" NAME="example_sx1508_led_toggle Coverage Results" MODIFIED="1673352294381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/rc_hardware/examples/sx1508" />
+    <SUITE FILE_PATH="coverage/cm4_core$test.coverage" NAME="test Coverage Results" MODIFIED="1680116740582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot/TWIPR" />
+    <SUITE FILE_PATH="coverage/cm4_core$example_led_sx1508_raw.coverage" NAME="example_led_sx1508_raw Coverage Results" MODIFIED="1666369140038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/archive/cm4_core_old2/examples/scratches" />
+    <SUITE FILE_PATH="coverage/cm4_core$examples_spi.coverage" NAME="examples_spi Coverage Results" MODIFIED="1678794393989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/communication/spi" />
+    <SUITE FILE_PATH="coverage/cm4_core$dfdfd.coverage" NAME="dfdfd Coverage Results" MODIFIED="1673272514721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core" />
+    <SUITE FILE_PATH="coverage/cm4_core$test_rpi.coverage" NAME="test_rpi Coverage Results" MODIFIED="1680259788494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/utils/joystick" />
+    <SUITE FILE_PATH="coverage/cm4_core$examples_tcp.coverage" NAME="examples_tcp Coverage Results" MODIFIED="1666444351803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/communication/wifi/examples" />
+    <SUITE FILE_PATH="coverage/cm4_core$example_write_memory.coverage" NAME="example_write_memory Coverage Results" MODIFIED="1666368105997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/examples/hardware/hardware_extender" />
+    <SUITE FILE_PATH="coverage/cm4_core$test_interrupts.coverage" NAME="test_interrupts Coverage Results" MODIFIED="1679667723207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot/TWIPR/tests" />
+    <SUITE FILE_PATH="coverage/cm4_core$board_config.coverage" NAME="board_config Coverage Results" MODIFIED="1669132076384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/utils" />
+    <SUITE FILE_PATH="coverage/cm4_core$example_device.coverage" NAME="example_device Coverage Results" MODIFIED="1673354143834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/device/examples" />
+    <SUITE FILE_PATH="coverage/cm4_core$examples_wifi.coverage" NAME="examples_wifi Coverage Results" MODIFIED="1673265947575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/communication/wifi/examples" />
+    <SUITE FILE_PATH="coverage/cm4_core$test_controller.coverage" NAME="test_controller Coverage Results" MODIFIED="1679654673514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot/TWIPR/tests" />
+    <SUITE FILE_PATH="coverage/cm4_core$example_sx1508_led_toggle__1_.coverage" NAME="example_sx1508_led_toggle (1) Coverage Results" MODIFIED="1666369075617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/hardware/examples/sx1508" />
+    <SUITE FILE_PATH="coverage/cm4_core$test_communication.coverage" NAME="test_communication Coverage Results" MODIFIED="1678648386451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot/TWIPR/tests" />
+    <SUITE FILE_PATH="coverage/cm4_core$main.coverage" NAME="main Coverage Results" MODIFIED="1682417559026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot/TWIPR/experiments" />
+    <SUITE FILE_PATH="coverage/cm4_core$example_sx1508_set_gpio.coverage" NAME="example_sx1508_set_gpio Coverage Results" MODIFIED="1673276383389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/rc_hardware/examples/sx1508" />
+    <SUITE FILE_PATH="coverage/cm4_core$i2c_g031.coverage" NAME="i2c_g031 Coverage Results" MODIFIED="1666368069740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/examples/hardware" />
+    <SUITE FILE_PATH="coverage/cm4_core$examples_communication.coverage" NAME="examples_communication Coverage Results" MODIFIED="1679585635399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot/TWIPR/communication/examples" />
+    <SUITE FILE_PATH="coverage/cm4_core$test_experiment.coverage" NAME="test_experiment Coverage Results" MODIFIED="1688394852382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/robot/TWIPR/experiments" />
+    <SUITE FILE_PATH="coverage/cm4_core$example_joystick.coverage" NAME="example_joystick Coverage Results" MODIFIED="1680124258231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cm4_core/utils/joystick/examples" />
+  </component>
+</project>

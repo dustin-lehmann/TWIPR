@@ -231,7 +231,11 @@ class TCP_Socket:
         for connection in readable:
             try:
                 # save received data
-                data = connection.recv(MAX_SOCKET_READ)
+                data = []
+                try:
+                    data = connection.recv(MAX_SOCKET_READ)
+                except:
+                    pass
                 if len(data) > 0:
                     self._rxFunction(data)
 
@@ -367,5 +371,7 @@ class TCP_Socket:
         except BlockingIOError as exc:
             if exc.errno != errno.EAGAIN:
                 # Raise on unknown exception
-                raise
+                pass
+        except:
+            pass
         return False

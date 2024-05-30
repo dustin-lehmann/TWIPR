@@ -2,7 +2,7 @@ import logging
 import time
 
 from cm4_core.communication.wifi.protocols.tcp_json_protocol import TCP_JSON_Message
-from cm4_core.device.interface import Interface
+from cm4_core.interface.wifi_interface import WIFI_Interface
 
 logging.basicConfig(level='DEBUG')
 
@@ -30,7 +30,6 @@ def example_device():
                 'hello': 1234
             }
             # d._wifi_send(msg)
-
 
 
 if __name__ == '__main__':

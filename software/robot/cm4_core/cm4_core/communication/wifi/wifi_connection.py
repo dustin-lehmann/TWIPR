@@ -78,6 +78,7 @@ class WIFI_Connection:
 
         self._tcp_socket = tcp.TCP_Socket(config=tcp_socket_config)
         self._tcp_socket.registerCallback('rx', self._tcp_rxCallback)
+        self._tcp_socket.registerCallback('disconnected', self._tcp_disconnectedCallback)
 
         self.callbacks = {
             'rx': [],
@@ -130,6 +131,7 @@ class WIFI_Connection:
 
     # ------------------------------------------------------------------------------------------------------------------
     def _connect(self) -> bool:
+        logger.info("Starting to connect to Server")
         success = self._listenForServerData(timeout=5)
 
         if not success:
@@ -238,6 +240,12 @@ class WIFI_Connection:
                 callback(message)
 
             self.events['rx'].set()
+
+    # ------------------------------------------------------------------------------------------------------------------
+    def _tcp_disconnectedCallback(self, tcp_socket, *args, **kwargs):
+        self.connected = False
+        for callback in self.callbacks['disconnected']:
+            callback()
 
     # ------------------------------------------------------------------------------------------------------------------
     def _udp_rxCallback(self, message: udp.UDP_Message):

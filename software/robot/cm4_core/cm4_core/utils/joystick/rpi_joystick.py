@@ -50,8 +50,12 @@ class RpiJoystick:
 
     def __init__(self):
         self.callbacks = []
-        self.device = InputDevice('/dev/input/event2')
-        self.axes = [0,0,0,0]
+        try:
+            # self.device = InputDevice('/dev/input/event4')
+            self.device = InputDevice('/dev/input/event2')
+        except Exception:
+            raise Exception("No Joystick connected")
+        self.axes = [0, 0, 0, 0]
 
         self._button_thread = threading.Thread(target=self._buttonThreadFunction)
         self._button_thread.start()

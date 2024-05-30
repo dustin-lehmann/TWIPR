@@ -1,3 +1,4 @@
+import cm4_core.utils.json_utils as json_utils
 import json
 import uuid
 from pathlib import Path
@@ -23,26 +24,23 @@ def getBoardConfig():
 # ======================================================================================================================
 def generate_uuid_file():
     uid = str(uuid.uuid4())
-    print(uid)
     data = {
         'uid': uid
     }
-
-    with open(uuid_file_path, "w") as uuid_file:
-        json.dump(data, uuid_file)
+    json_utils.writeJSON(uuid_file_path, data)
 
 
+#
+#
 # ======================================================================================================================
 def generate_board_config():
     board_config = {
         'name': 'c4_02',
         'address': list(b'\x01\x01'),
     }
-
-    with open(config_file_path, 'w') as config_file:
-        json.dump(board_config, config_file)
+    json_utils.writeJSON(config_file_path, board_config)
 
 
 if __name__ == '__main__':
-    # generate_uuid_file()
+    generate_uuid_file()
     generate_board_config()

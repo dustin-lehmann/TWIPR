@@ -12,6 +12,8 @@ RegReset = 0x7D
 
 data = 0
 
+SX1508_I2C_ADDRESS = 0x20
+
 
 class SX1508_GPIO_MODE(enum.Enum):
     INPUT = 0
@@ -24,7 +26,7 @@ class SX1508:
 
     data: int
 
-    def __init__(self, address: int = 0x20, reset=False):
+    def __init__(self, address: int = SX1508_I2C_ADDRESS, reset=False):
         self.address = address
         self._i2c = board.I2C()
         if reset:
@@ -97,6 +99,7 @@ class SX1508:
         if not isinstance(data, bytes):
             data = bt.bytes_(data)
 
+        x = reg + data
         self._i2c.writeto(address=self.address, buffer=reg + data)
 
     def _readReg(self, reg):

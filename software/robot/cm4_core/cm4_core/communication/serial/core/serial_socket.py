@@ -63,7 +63,7 @@ class UART_Socket:
         try:
             os.stat(self.device)
         except OSError:
-            raise Exception("UART Device does not exist!")
+            raise Exception(f"UART Device {self.device} does not exist!")
 
         self._device = serial.Serial(self.device, baudrate=self.baudrate, timeout=self.timeout)
 

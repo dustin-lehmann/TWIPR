@@ -2,7 +2,7 @@ import logging
 import time
 
 from cm4_core.communication.serial.protocols.uart_protocol import UART_Message
-from cm4_core.communication.serial.serial_device import UART_Socket, Serial_Device
+from cm4_core.communication.serial.serial_connection import UART_Socket, SerialConnection
 
 logging.basicConfig(
     format='%(asctime)s.%(msecs)03d  %(levelname)-8s  %(message)s',
@@ -29,7 +29,7 @@ def example_simple_serial():
         uart_socket.close()
 
 
-uart: Serial_Device = None
+uart: SerialConnection = None
 
 
 def example_serial_device():
@@ -37,7 +37,7 @@ def example_serial_device():
         logging.info(f"Receive message with id {message.msg} and cmd {message.cmd} and payload {message.data}")
 
     global uart
-    uart = Serial_Device(device="/dev/ttyAMA1", baudrate=115200)
+    uart = SerialConnection(device="/dev/ttyAMA1", baudrate=1000000)
     uart.registerCallback('rx', rx_callback)
     uart.start()
 

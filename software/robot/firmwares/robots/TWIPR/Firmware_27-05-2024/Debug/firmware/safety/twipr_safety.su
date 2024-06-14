@@ -1,0 +1,6 @@
+/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.macos64_1.0.100.202403111906/tools/arm-none-eabi/include/c++/12.3.1/bits/std_abs.h:75:3:constexpr float std::abs(float)	16	static
+../firmware/safety/twipr_safety.cpp:16:1:TWIPR_Safety::TWIPR_Safety()	16	static
+../firmware/safety/twipr_safety.cpp:21:6:void TWIPR_Safety::init(TWIPR_Safety_Config_t)	16	static
+../firmware/safety/twipr_safety.cpp:26:6:void TWIPR_Safety::start()	16	static
+../firmware/safety/twipr_safety.cpp:32:6:void TWIPR_Safety::task_function()	24	static
+../firmware/safety/twipr_safety.cpp:48:6:void twipr_safety_task(void*)	24	static

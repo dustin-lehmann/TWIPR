@@ -12,6 +12,7 @@ from core.communication.wifi.protocols.tcp_handshake_protocol import TCP_Handsha
 from core.communication.wifi.protocols.tcp_base_protocol import TCP_Base_Message, TCP_Base_Protocol
 from core.communication.wifi.protocols.tcp_json_protocol import TCP_JSON_Protocol
 from utils.callbacks import Callback
+import utils.network
 
 import core.communication.wifi.addresses as addresses
 from utils.elapsedTimer import ElapsedTimer
@@ -277,7 +278,7 @@ class WIFI_Connection:
     def _udp_rxCallback(self, message: udp.UDP_Message):
 
         # Try to decode the UDP message and look for address and port of the server
-        address, port = network.splitServerAddress(message.data.decode('utf-8'))
+        address, port = utils.network.splitServerAddress(message.data.decode('utf-8'))
         if address is not None and port is not None:
             self._server_data.address = address
             self._server_data.port = port

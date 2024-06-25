@@ -1,4 +1,4 @@
-import board
+import utils.board as board
 from RPi import GPIO
 
 

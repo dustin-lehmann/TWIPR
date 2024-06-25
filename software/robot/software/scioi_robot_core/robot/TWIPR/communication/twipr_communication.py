@@ -1,4 +1,4 @@
-from utils import Callback
+from utils.callbacks import Callback
 from board.board import RobotControl_Board
 from robot.TWIPR.communication.serial.twipr_comm_serial import TWIPR_Serial_Interface
 from robot.TWIPR.communication.spi.twipr_comm_spi import TWIPR_SPI_Interface

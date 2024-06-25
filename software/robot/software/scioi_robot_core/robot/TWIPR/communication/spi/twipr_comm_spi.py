@@ -2,9 +2,9 @@ from ctypes import sizeof
 
 from core.communication.spi.spi import SPI_Interface
 import robot.TWIPR.settings as settings
-from utils import Callback
+from utils.callbacks import Callback
 import robot.TWIPR.communication.spi.ll_sample as ll_sample
-from utils import struct_to_dict
+from utils.ctypes_utils import struct_to_dict
 
 from RPi import GPIO
 

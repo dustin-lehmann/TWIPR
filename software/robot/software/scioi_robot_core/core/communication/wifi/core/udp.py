@@ -5,7 +5,7 @@ import socket
 import threading
 import time
 
-from utils import Callback
+from utils.callbacks import Callback
 
 logger = logging.getLogger('udp')
 logger.setLevel('DEBUG')

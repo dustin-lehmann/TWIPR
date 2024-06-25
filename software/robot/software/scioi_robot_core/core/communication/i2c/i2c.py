@@ -1,4 +1,4 @@
-import board
+import utils.board as board
 from utils import bytes as bt
 
 

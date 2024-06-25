@@ -1,6 +1,6 @@
 import logging
 
-from utils import Callback
+from utils.callbacks import Callback
 
 
 # ======================================================================================================================

@@ -1,6 +1,6 @@
 import enum
 
-import board
+import utils.board as board
 from utils import bytes as bt
 
 RegInputDisable = 0x00

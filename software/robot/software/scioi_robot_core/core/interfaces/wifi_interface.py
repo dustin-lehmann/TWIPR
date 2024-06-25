@@ -5,8 +5,8 @@ from core.communication.wifi.protocols.tcp_json_protocol import TCP_JSON_Protoco
 from core.communication.wifi.wifi_connection import WIFI_Connection
 import utils as utils
 from core.interfaces.data_link import DataLink, Command, generateDataDict, generateCommandDict
-from utils import Callback
-
+from utils.callbacks import Callback
+from utils.board_config import *
 
 class Stream:
     parameters: list
@@ -43,7 +43,7 @@ class WIFI_Interface:
     def __init__(self, interface_type: str = 'wifi', device_class: str = None, device_type: str = None, device_revision: str = None,
                  device_name: str = None, device_id: str = None):
         # Read the device config file
-        board_config = utils.board_config.getBoardConfig()
+        board_config = getBoardConfig()
 
         self.device_class = device_class
         self.device_type = device_type

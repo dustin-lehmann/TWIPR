@@ -7,7 +7,7 @@ import board.settings as board_parameters
 from core.communication.serial.serial_interface import Serial_Interface
 from board.board_utils import reset_uart
 from board.io_extension.io_extension import RobotControl_IO_Extension
-
+from utils.debug import *
 
 class RobotControl_Board:
     wifi_interface: WIFI_Interface

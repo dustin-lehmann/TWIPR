@@ -1,7 +1,7 @@
 import ctypes
 
 from core.communication.serial.serial_interface import Serial_Interface
-from utils import Callback
+from utils.callbacks import Callback
 
 import robot.TWIPR.settings as settings
 import robot.TWIPR.communication.serial.adresses_general as addresses_general

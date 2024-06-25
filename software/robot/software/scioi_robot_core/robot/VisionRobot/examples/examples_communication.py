@@ -16,8 +16,8 @@
 #         time.sleep(0.25)
 import time
 
-from utils import rpi_joystick
-from utils import stm32_reset
+from extensions.joystick import rpi_joystick
+from utils.stm32.stm32_flash.reset import reset as stm32_reset
 from robot.VisionRobot.VisionRobot import VisionRobot
 
 
@@ -87,9 +87,20 @@ def test_server_comm():
     while True:
         time.sleep(1)
 
+def test_receive():
+
+    stm32_reset(0.25)
+    robot = VisionRobot()
+    robot.init()
+    robot.start()
+
+    while True:
+        time.sleep(1)
+
 
 if __name__ == '__main__':
     # test_board()
     # print("HALLO")
     # test_speed_control()
-    test_server_comm()
+    #test_server_comm()
+    test_receive()

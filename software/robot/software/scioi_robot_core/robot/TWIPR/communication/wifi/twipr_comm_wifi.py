@@ -2,7 +2,7 @@
 import time
 
 from core.interfaces.wifi_interface import WIFI_Interface
-from utils import Callback
+from utils.callbacks import Callback
 
 
 class TWIPR_WIFI_Interface:

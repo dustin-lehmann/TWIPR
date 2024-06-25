@@ -1,6 +1,6 @@
 import os
 
-from utils import writeJSON, readJSON
+from utils.json_utils import writeJSON, readJSON
 
 settings_file_path = os.path.expanduser('~/robot_settings.json')
 

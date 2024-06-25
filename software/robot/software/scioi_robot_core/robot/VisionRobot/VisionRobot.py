@@ -5,6 +5,7 @@ import robot.VisionRobot.navigation.agent as agent
 
 from board.board import RobotControl_Board
 from robot.TWIPR.communication.twipr_communication import TWIPR_Communication
+from utils.ctypes_utils import struct_to_dict
 
 
 class motor_input_struct(ctypes.Structure):
@@ -14,6 +15,28 @@ class motor_input_struct(ctypes.Structure):
 class motor_speed_struct(ctypes.Structure):
     _fields_ = [("input_left", ctypes.c_float), ("input_right", ctypes.c_float)]
 
+
+class CommunicationData(ctypes.Structure):
+    _fields_ = [
+        ("tick", ctypes.c_uint32),
+        ("debug", ctypes.c_uint8),
+        ("state", ctypes.c_uint8),
+        ("battery_voltage", ctypes.c_float),
+
+        ("rpm_l", ctypes.c_float),
+        ("rpm_r", ctypes.c_float),
+        ("velocity_l", ctypes.c_float),
+        ("velocity_r", ctypes.c_float),
+        ("velocity_forward", ctypes.c_float),
+        ("velocity_turn", ctypes.c_float),
+
+        ("imu_gyr_x", ctypes.c_float),
+        ("imu_gyr_y", ctypes.c_float),
+        ("imu_gyr_z", ctypes.c_float),
+        ("imu_acc_x", ctypes.c_float),
+        ("imu_acc_y", ctypes.c_float),
+        ("imu_acc_z", ctypes.c_float),
+    ]
 
 
 class VisionRobot:
@@ -28,7 +51,7 @@ class VisionRobot:
 
         self.communication = TWIPR_Communication(board=self.board)
         self.agent = agent.Agent(self)
-        self.communication.serial.registerCallback('rx', self._rx_callback)
+        self.communication.serial.interface.registerCallback('rx_stream', self._rx_callback)
 
         self.communication.wifi.addCommand(identifier='setSpeed',
                                            callback=self.setSpeed,
@@ -68,7 +91,8 @@ class VisionRobot:
         print(f"Set Speed to {speed}")
         assert (isinstance(speed, list))
         input_struct = motor_input_struct(input_left=speed[0], input_right=speed[1])
-        self.communication.serial.executeFunction(module=0x01,address=0x02, data=input_struct,input_type=motor_input_struct)
+        self.communication.serial.executeFunction(module=0x01, address=0x02, data=input_struct,
+                                                  input_type=motor_input_struct)
 
     def turn(self, phi):
         print(f"Turn by {phi}")
@@ -80,11 +104,13 @@ class VisionRobot:
 
     # === PRIVATE METHODS ==============================================================================================
     def _threadFunction(self):
-
         while True:
             data = {'test': 1}
             self.communication.wifi.sendStream(data)
             time.sleep(0.1)
 
-    def _rx_callback(self, data, *args, **kwargs):
-        print(f"Received something {data}")
+    def _rx_callback(self, msg_data, *args, **kwargs):
+        data = CommunicationData.from_buffer_copy(msg_data)
+        data = struct_to_dict(data)
+        print(f"{data}")
+        # print(f"Received something {data}")

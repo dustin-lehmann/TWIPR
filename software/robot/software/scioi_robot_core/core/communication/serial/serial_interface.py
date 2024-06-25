@@ -54,6 +54,7 @@ class Serial_Interface:
 
         self.callbacks = {
             'rx': [],
+            'rx_stream': [],
             'error': []
         }
 
@@ -189,6 +190,7 @@ class Serial_Interface:
             # ERROR. Should not happen
             pass
         elif message.cmd == UART_CMD.UART_CMD_STREAM:
+            self._handleStreamMessage(message)
             pass
         elif message.cmd == UART_CMD.UART_CMD_EVENT:
             pass
@@ -203,8 +205,11 @@ class Serial_Interface:
                 req.msg = msg
                 req.event.set()
 
-        # ------------------------------------------------------------------------------------------------------------------
-
+    # ------------------------------------------------------------------------------------------------------------------
+    def _handleStreamMessage(self, msg):
+        for callback in self.callbacks['rx_stream']:
+            callback(msg.data)
+    # ------------------------------------------------------------------------------------------------------------------
     def _registerRead(self, module, address):
         request = ReadRequest()
 

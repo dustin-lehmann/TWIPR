@@ -87,8 +87,8 @@ def test_server_comm():
     while True:
         time.sleep(1)
 
-def test_receive():
 
+def test_receive():
     stm32_reset(0.25)
     robot = VisionRobot()
     robot.init()

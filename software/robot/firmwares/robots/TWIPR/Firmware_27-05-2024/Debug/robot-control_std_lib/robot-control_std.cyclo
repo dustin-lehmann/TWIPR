@@ -1,5 +1,0 @@
-/Users/lehmann/work_dir/work_dir/projects/testbed/software/robots/software_board/libraries/general/robot-control_std_lib/robot-control_std.cpp:54:6:void robot_control_init()	1
-/Users/lehmann/work_dir/work_dir/projects/testbed/software/robots/software_board/libraries/general/robot-control_std_lib/robot-control_std.cpp:64:6:void robot_control_start()	1
-/Users/lehmann/work_dir/work_dir/projects/testbed/software/robots/software_board/libraries/general/robot-control_std_lib/robot-control_std.cpp:70:6:void robot_control_task(void*)	1
-/Users/lehmann/work_dir/work_dir/projects/testbed/software/robots/software_board/libraries/general/robot-control_std_lib/robot-control_std.cpp:87:1:void __static_initialization_and_destruction_0(int, int)	3
-/Users/lehmann/work_dir/work_dir/projects/testbed/software/robots/software_board/libraries/general/robot-control_std_lib/robot-control_std.cpp:87:1:cpp)	1

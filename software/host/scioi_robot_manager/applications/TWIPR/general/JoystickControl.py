@@ -1,3 +1,4 @@
+import sys
 import time
 
 from extensions.cli.cli import CommandSet, CLI, Command, CommandArgument

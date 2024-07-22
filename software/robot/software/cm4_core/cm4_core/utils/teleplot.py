@@ -1,7 +1,7 @@
 import socket
 
 open_socket = None
-port = 58635
+port = 59090
 
 
 def sendValue(name, value):

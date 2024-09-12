@@ -65,17 +65,20 @@ def test_speed_control():
         print("LED OFF")
         robot.debug(0)
 
-    joystick = rpi_joystick.RpiJoystick()
-    joystick.set_callback(event=rpi_joystick.A, callback=led_on)
-    joystick.set_callback(event=rpi_joystick.B, callback=led_off)
+    #joystick = rpi_joystick.RpiJoystick()
+    #joystick.set_callback(event=rpi_joystick.A, callback=led_on)
+    #joystick.set_callback(event=rpi_joystick.B, callback=led_off)
 
     while True:
-        val1 = joystick.axes[1]
-        val2 = joystick.axes[2]
-        speed_left = 0.5 * val1 + 0.5 * val2
-        speed_right = 0.5 * val1 - 0.5 * val2
-        robot.setSpeed([speed_left, speed_right])
-        time.sleep(0.1)
+        #val1 = joystick.axes[1]
+        #val2 = joystick.axes[2]
+        #speed_left = 0.5 * val1 + 0.5 * val2
+        #speed_right = 0.5 * val1 - 0.5 * val2
+        #robot.setSpeed([speed_left, speed_right])
+        robot.debug(1)
+        time.sleep(1)
+        robot.debug(0)
+        time.sleep(1)
 
 
 def test_server_comm():
@@ -101,6 +104,6 @@ def test_receive():
 if __name__ == '__main__':
     # test_board()
     # print("HALLO")
-    # test_speed_control()
+    #test_speed_control()
     #test_server_comm()
     test_receive()

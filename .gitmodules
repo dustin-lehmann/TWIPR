@@ -1,0 +1,3 @@
+[submodule "software/robot/software/scioi_robot_core/robot/VisionRobot/aruco_detection"]
+	path = software/robot/software/scioi_robot_core/robot/VisionRobot/aruco_detection
+	url = git@github.com:harke42/aruco_detection.git

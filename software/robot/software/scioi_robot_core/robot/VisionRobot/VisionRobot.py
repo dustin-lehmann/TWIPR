@@ -8,8 +8,9 @@ from board.board import RobotControl_Board
 from robot.TWIPR.communication.twipr_communication import TWIPR_Communication
 from utils.ctypes_utils import struct_to_dict
 
-
 ''' Define Structs START '''
+
+
 class motor_input_struct(ctypes.Structure):
     _fields_ = [("input_left", ctypes.c_float), ("input_right", ctypes.c_float)]
 
@@ -42,26 +43,27 @@ class CommunicationData(ctypes.Structure):
             "imu_acc_y", ctypes.c_float),
         ("imu_acc_z", ctypes.c_float),
     ]
+
+
 ''' Define Structs END '''
 
 
 class VisionRobot:
-
     #aruco_detector: arcd.ArucoDetector
     board: RobotControl_Board
     communication: TWIPR_Communication
     _thread: threading.Thread
     agent: agent.Agent
+    data: CommunicationData
 
     def __init__(self, camera_version="v3", image_server_ip="localhost"):
-
         #self.aruco_detector = arcd.ArucoDetector(version=camera_version,
         #                                         stream_if=image_server_ip)
-        
-        self.board = RobotControl_Board(device_class='robot', 
-                                        device_type='visionrobot', 
+
+        self.board = RobotControl_Board(device_class='robot',
+                                        device_type='visionrobot',
                                         device_revision='v2',
-                                        device_id='visionrobot1', 
+                                        device_id='visionrobot1',
                                         device_name='Vision Robot 1')
 
         self.communication = TWIPR_Communication(board=self.board)
@@ -72,7 +74,7 @@ class VisionRobot:
                                            callback=self.setSpeed,
                                            arguments=['speed'],
                                            description='Set the speed of the motors')
-        
+
         self.communication.wifi.addCommand(identifier='turn',
                                            callback=self.turn,
                                            arguments=['phi'],
@@ -82,8 +84,10 @@ class VisionRobot:
                                            callback=self.goTo,
                                            arguments=['x', 'y'],
                                            description='Go to specified x,y position in local coordinate system')
-        
+
         self._thread = threading.Thread(target=self._threadFunction)
+
+        self.data = CommunicationData()
 
     # === METHODS ======================================================================================================
     def init(self):
@@ -104,10 +108,11 @@ class VisionRobot:
     '''Debug Function to check UART functionality
         Turns on and off LED Below USB C Port
     '''
+
     def debug(self, state):
-        self.communication.serial.executeFunction(module=0x01, 
-                                                  address=0x01, 
-                                                  data=state, 
+        self.communication.serial.executeFunction(module=0x01,
+                                                  address=0x01,
+                                                  data=state,
                                                   input_type=ctypes.c_uint8,
                                                   output_type=None)
 
@@ -115,8 +120,8 @@ class VisionRobot:
         assert (isinstance(speed, list))
         print(f"Set Speed to {speed}")
         input_struct = motor_input_struct(input_left=speed[0], input_right=speed[1])
-        self.communication.serial.executeFunction(module=0x01, 
-                                                  address=0x02, 
+        self.communication.serial.executeFunction(module=0x01,
+                                                  address=0x02,
                                                   data=input_struct,
                                                   input_type=motor_input_struct)
 
@@ -130,6 +135,7 @@ class VisionRobot:
 
     # === PRIVATE METHODS ==============================================================================================
     ''' Send Stream to Hardware Manager '''
+
     def _threadFunction(self):
         while True:
             data = {'test': 1}
@@ -137,7 +143,8 @@ class VisionRobot:
             time.sleep(0.1)
 
     ''' get Data from MC Firmware '''
+
     def _rx_callback(self, msg_data, *args, **kwargs):
         data = CommunicationData.from_buffer_copy(msg_data)
-        data = struct_to_dict(data)
-        print(f"{data}")
+        self.data = struct_to_dict(data)
+        # print(f"{data}")

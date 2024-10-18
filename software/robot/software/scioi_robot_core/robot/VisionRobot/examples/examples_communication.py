@@ -96,6 +96,7 @@ def test_receive():
     robot = VisionRobot()
     robot.init()
     robot.start()
+    robot.setSpeed([0.0, 0.0])
 
     while True:
         time.sleep(1)

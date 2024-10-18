@@ -25,6 +25,8 @@ class CommunicationData(ctypes.Structure):
         ("state", ctypes.c_uint8),
         ("battery_voltage", ctypes.c_float),
 
+        ("goal_speed_l", ctypes.c_float),
+        ("goal_speed_r", ctypes.c_float),
         ("rpm_l", ctypes.c_float),
         ("rpm_r", ctypes.c_float),
         ("velocity_l", ctypes.c_float),
@@ -36,7 +38,8 @@ class CommunicationData(ctypes.Structure):
         ("imu_gyr_y", ctypes.c_float),
         ("imu_gyr_z", ctypes.c_float),
         ("imu_acc_x", ctypes.c_float),
-        ("imu_acc_y", ctypes.c_float),
+        (
+            "imu_acc_y", ctypes.c_float),
         ("imu_acc_z", ctypes.c_float),
     ]
 ''' Define Structs END '''
@@ -44,7 +47,7 @@ class CommunicationData(ctypes.Structure):
 
 class VisionRobot:
 
-    aruco_detector: arcd.ArucoDetector
+    #aruco_detector: arcd.ArucoDetector
     board: RobotControl_Board
     communication: TWIPR_Communication
     _thread: threading.Thread
@@ -52,8 +55,8 @@ class VisionRobot:
 
     def __init__(self, camera_version="v3", image_server_ip="localhost"):
 
-        self.aruco_detector = arcd.ArucoDetector(version=camera_version, 
-                                                 stream_if=image_server_ip)
+        #self.aruco_detector = arcd.ArucoDetector(version=camera_version,
+        #                                         stream_if=image_server_ip)
         
         self.board = RobotControl_Board(device_class='robot', 
                                         device_type='visionrobot', 
@@ -89,7 +92,7 @@ class VisionRobot:
 
     # ------------------------------------------------------------------------------------------------------------------
     def start(self):
-        self.aruco_detector.start()
+        #self.aruco_detector.start()
         self.board.start()
         self.communication.start()
         self._thread.start()

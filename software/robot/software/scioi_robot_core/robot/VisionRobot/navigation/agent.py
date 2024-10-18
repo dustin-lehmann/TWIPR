@@ -5,6 +5,35 @@ import numpy as np
 
 from robot.VisionRobot import VisionRobot
 
+class Agent:
+
+    goal_position: list
+    position: list # [x, y]
+    direction: float # 0 < direction < 2*pi
+
+    robot: VisionRobot
+
+    #controller parameters
+    k_phi: int      #proportional phi coefficient
+    k_v: int        #proportional v coefficient
+
+    def __init__(self, start_pos=[0.0,0.0], start_dir=0.0, robot):
+        self.position = start_pos
+        self.goal_position = [0.0, 0.0]
+        self.direction = start_dir
+        self.robot = robot
+
+    def update_position(self, delta_time, velocity_l, velocity_r):
+        # calculate current position
+        
+
+        # calculate next movement
+        error_phi = np.arctan2(self.goal_position[1]-self.position[1],
+                               self.goal_position[0]-self.position[0])
+
+        error_v = np.sqrt((self.goal_position[1]-self.position[1])**2 + (self.goal_position[0]-self.position[0])**2)
+
+"""
 SAMPLE_TIME = 0.01
 
 class Agent:
@@ -47,6 +76,7 @@ class Agent:
 
     def addGoal(self, x, y):
         self.goal_positions.append([x, y])
+
     def _control(self):
         # PD-Control for Psi
         error_psi = np.arctan2((self.goal_position[1] - self.state[1]), (self.goal_position[0] - self.state[0])) - \
@@ -113,3 +143,4 @@ if __name__ == '__main__':
     robot.start()
     agent = Agent(robot)
     agent.start()
+"""

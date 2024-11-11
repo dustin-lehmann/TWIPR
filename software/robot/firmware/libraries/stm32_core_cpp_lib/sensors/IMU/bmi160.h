@@ -53,9 +53,9 @@ typedef struct bmi160_acc_config_t {
 } bmi160_acc_config_t;
 
 typedef struct bmi160_gyr_config_t {
-	uint8_t odr = BMI160_GYRO_ODR_400HZ;
+	uint8_t odr = BMI160_GYRO_ODR_800HZ;
 	uint8_t bw = BMI160_GYRO_BW_NORMAL_MODE;
-	uint8_t range = BMI160_GYRO_RANGE_1000_DPS;
+	uint8_t range = BMI160_GYRO_RANGE_2000_DPS;
 	uint8_t foc_enable = 1;
 } bmi160_gyr_config_t;
 

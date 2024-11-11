@@ -22,7 +22,7 @@
 #include "communication/modbus_rtu/modbus_rtu.h"
 #include "utils/core_debug.hpp"
 #include "hardware/SPI/core_hardware_spi.h"
-
+#include "control/pid/pid.h"
 
 
 #define _RAM_D2 __attribute__(( section(".ramd2block") ))

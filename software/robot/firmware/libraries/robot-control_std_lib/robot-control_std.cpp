@@ -8,7 +8,7 @@
 #include "robot-control_std.h"
 #include <stdio.h>
 
-core_hardware_LED rc_status_led_1(BOARD_LED_1_PORT, BOARD_LED_1_PIN);
+//core_hardware_LED rc_status_led_1(BOARD_LED_1_PORT, BOARD_LED_1_PIN);
 core_hardware_LED rc_status_led_2(BOARD_LED_2_PORT, BOARD_LED_2_PIN);
 
 core_hardware_LED rc_button_led_1(GPIOA, GPIO_PIN_0);
@@ -20,7 +20,7 @@ core_hardware_Button off_button(GPIOC, GPIO_PIN_0);
 core_hardware_LED rc_activity_led(BOARD_LED_ACT_PORT, BOARD_LED_ACT_PIN);
 RobotControl_StatusLED rc_error_led;
 
-core_hardware_Button button(BOARD_BUTTON_PORT, BOARD_BUTTON_PIN);
+//core_hardware_Button button(BOARD_BUTTON_PORT, BOARD_BUTTON_PIN);
 
 
 

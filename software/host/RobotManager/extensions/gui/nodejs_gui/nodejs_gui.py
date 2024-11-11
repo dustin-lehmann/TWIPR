@@ -11,6 +11,11 @@ from extensions.websockets.websocket_server import WebsocketClass
 frontend_dir = f"{os.path.dirname(__file__)}/frontend/"
 
 
+def install():
+    os.chdir(frontend_dir)
+    os.system("npm install")
+
+
 class NodeJSGui:
     websocket_stream: WebsocketClass
     websocket_messages: WebsocketClass
@@ -27,9 +32,6 @@ class NodeJSGui:
         self.websocket_messages.set_message_callback(self._rxMessage_callback)
         self.websocket_messages.set_connection_callback(self._websocketClientConnected_callback)
 
-        # Check if the GUI is installed
-        if not (self.checkInstallation()):
-            raise Exception("GUI is not installed! Run npm install in the frontend folder.")
 
         self.frontend_process = None
 
@@ -44,6 +46,8 @@ class NodeJSGui:
 
     # ------------------------------------------------------------------------------------------------------------------
     def init(self):
+        if not (self.checkInstallation()):
+            raise Exception("GUI is not installed! Run npm install in the frontend folder.")
         ...
 
     # ------------------------------------------------------------------------------------------------------------------
@@ -89,9 +93,6 @@ class NodeJSGui:
         self.websocket_stream.send(data)
 
     # ------------------------------------------------------------------------------------------------------------------
-    def install(self):
-        os.chdir(frontend_dir)
-        os.system("npm install")
 
     # ------------------------------------------------------------------------------------------------------------------
     def checkInstallation(self):

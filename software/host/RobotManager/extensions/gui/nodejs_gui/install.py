@@ -5,7 +5,7 @@ from extensions.gui.nodejs_gui.nodejs_gui import NodeJSGui
 
 def install():
     gui = NodeJSGui()
-    gui.install()
+    install()
 
     time.sleep(20)
 
